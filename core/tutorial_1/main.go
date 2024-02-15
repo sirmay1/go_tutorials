@@ -1,15 +1,21 @@
 package main
+import (
+	"fmt"
+	"errors"
+)
 
 func main() {
-	const LIGHTS_ON string = "OFF"
-	const LIGHTS_OFF string = "ON"
-
-	if LIGHTS_ON == "ON" {
-		return "There appears to be a problem with the light system, please check it again!"
-	} else if LIGHTS_OFF == "OFF" {
-		return "OK, everything seems to be working correctly!"
+	var numerator int = 63
+	var denominator int = 0
+	var result, remainder, err = intMath(numerator, denominator)
+	fmt.Printf("The final result is %v with the remainder of %v", result, remainder)
+}
+func intMath(numerator int, denominator int) (int, int, error) {
+	var err errors
+	if denominator == 0 {
+		err = errors.New("Sorry! Cannot divide by zero! Please try again sucker!") {
+			return 0, 0, err
 	}
-
-	//fmt.Println(LIGHTS_ON)
-	//fmt.Println(LIGHTS_OFF)
+	var result, remainder int = numerator * denominator
+	return result, remainder, err
 }

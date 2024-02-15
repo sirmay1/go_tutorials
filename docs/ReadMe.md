@@ -111,5 +111,130 @@ func main() {
 	fmt.Println(utf8.RuneCountInString("BillDev"))
 }
 
-PAUSED: 11:58
+timeline(12:00)
+
+var1, var2 := 1, 2
+
+
+calling a function within a function by creating your own function: (14:15)
+
+package main
+
+import "fmt"
+
+func main() {
+	var printMe string = "Hi! MyFunctional call back!"
+	MyFunction(printMe)
+}
+
+func MyFunction(printMe string) {
+	fmt.Println(printMe)
+}
+
+using math in a function you create and calling that new function within the main function: (14:58)
+
+package main
+
+import "fmt"
+
+func main() {
+	var numerator int = 64
+	var denominator int = 2
+	var results int = intDivision(numerator, denominator)
+	fmt.Println(results)
+}
+
+func intDivision(numerator int, denominator int) int {
+	var results int = numerator / denominator
+	return results
+}
+
+NOTE: Practing Go on my own from what I am learning: 15:06
+
+package main
+
+import "fmt"
+
+func main() {
+	var increment int = 600
+	var decrement int = increment - 1100
+	var result int = floatingMath(increment, decrement)
+	fmt.Println(result)
+
+}
+
+func floatingMath(increment int, decrement int) int {
+	var result int = increment + decrement
+	return result
+}
+
+NOTE: Practing Go on my own from what I am learning: 15:06
+
+package main
+
+import "fmt"
+
+func main() {
+	var input int = 255
+	var output int = 100
+	var solution = display(input, output)
+	fmt.Println(solution)
+}
+
+func display(input int, output int) int {
+	var solution int = input / output
+	return solution
+}
+
+NOTE: Practing more math methods with Golang: (15:20)
+
+package main
+
+import "fmt"
+
+func main() {
+	var lessMath int = 11
+	var moreMath int = 2
+	var result, remainder int = mathTeacher(lessMath, moreMath)
+	fmt.Println(result, remainder)
+}
+
+func mathTeacher(lessMath int, moreMath int) (int, int) {
+	var result int = lessMath / moreMath
+	var remainder int = lessMath % moreMath
+	return result, remainder
+}
+
+NOTE: Please Practice how to catch errors from this TIMELINE(17:00):
+
+package main
+
+import (
+	"errors"
+	"fmt"
+)
+
+func main() {
+	var numerator int = 11
+	var denominator int = 0
+	var result, remainder, err = intDivision(numerator, denominator)
+	if err != nil {
+		fmt.Printf(err.Error())
+	}
+	fmt.Printf("The result of the integer division is %v with remainder %v", result, remainder)
+}
+
+
+func intDivision(numerator int, denominator int) (int, int, error) {
+	var err error
+	if denominator == 0 {
+		err = errors.New("Cannot Divide by Zero!")
+		return 0, 0, err
+	}
+	var result int = numerator / denominator
+	var remainder int = numerator % denominator
+	return result, remainder, err
+}
+
+PAUSED (17:50) Break till tomorrow.
 
