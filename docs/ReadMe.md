@@ -4,11 +4,13 @@ For the past 3 weeks I've been trying to connect the backend and frontend using 
 So I spent 2 hours on GO and so far and within these 2 hours it is an amazing programming language. It reminds me of C programming language from the compilation process to the simplicity of the language, I really am enjoying GO!
 NOTE: I only decided to pick up Golang because after 3 weeks Django felt like it wasn't the right tool for the job. But this doesn't mean I will abandon Django. I will continue to use Django BUT only for creating CRUD apps but not for connecting a restful api.
 
-NOTE: github Push from this directory location:
+** NOTE: github Push from this directory location: **
 Make sure you are within the "go_tutorials" folder...
 
+"
 cd go_tutorials
 git commit
+			"
 
 
 
