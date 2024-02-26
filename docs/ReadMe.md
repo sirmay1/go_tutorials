@@ -737,3 +737,102 @@ func main() {
 }
 STOP!!! PAUSED: Go (Golang) Tutorial #8 - Booleans & Conditionals...
 Continue @ Tutorial #9 author: The NetNinja
+
+
+NOTE: PRACTICE map & for loop key & value
+
+
+package main
+
+import "fmt"
+
+func main() {
+	tech := map[string]string{
+		"React":          "JavaScript",
+		"Next.js":        "TypeScript",
+		"Nuxt.js":        "TypeScript",
+		"FastAPI":        "Python",
+		"Django":         "Python",
+		"Fiber":          "Golang",
+		"Springboot":     "Java",
+		"Spring":         "Java",
+		"Laravel":        "PHP",
+		"Gorilla":        "Golang",
+		"TempL":          "Golang",
+		"Qt":             "C",
+		"Raylib":         "C",
+		"UnReal Engine":  "C++",
+		"Unity":          "C#",
+		"Pygame":         "Python",
+		"Three.js":       "JavaScript",
+		"Android Studio": "Kotlin",
+		"Ktor":           "Kotlin",
+		"Kaboom.js":      "JavaScript",
+		"Godot":          "GDScript",
+		"Love":           "Lua",
+		"Rails":          "Ruby",
+		"ASP.NET":        "C#",
+		"WinForms":       "Visual Basics",
+		"SvelteKit":      "JavaScript",
+		"Svelte":         "JavaScript",
+		"React Native":   "TypeScript",
+	}
+	for key, value := range tech {
+		fmt.Printf("\nThe Framework Is: %v\nThe Programming Language is: %v\n", key, value)
+	}
+}
+
+
+NOTE: GO(Golang) Tutorial #9 - Using Functions (02/25/2024)
+Three step process:
+create a function with a basic operation like "Hello World"
+create a function which creates a range loop of the value "name" and a method
+creates a method which invokes the function outside of the scope of the main function and runs an operation
+
+
+
+package main
+
+import "fmt"
+
+func main() {
+	//sayGreetings("Billy")
+	//sayGreetings("Mario")
+	//sayGreetings("Bill Bob")
+	//sayGreetings("Luigi")
+	//sayBye("Billy")
+	//sayBye("Mario")
+	//sayBye("Bill Bob")
+	//sayBye("Luigi")
+	cycleNames([]string{"Bob", "Mariposa", "Jessica"}, sayGreetings)
+	cycleNames([]string{"Bob", "Mariposa", "Jessica"}, sayGreetings)
+	cycleGoodBye([]string{"Bob", "Mariposa", "Jessica"}, sayBye)
+	cycleGoodBye([]string{"Bob", "Mariposa", "Jessica"}, sayBye)
+	cycleStop([]string{"Bob", "Mariposa", "Jessica"}, sayStop)
+	cycleStop([]string{"Bob", "Mariposa", "Jessica"}, sayStop)
+}
+
+func sayGreetings(n string) {
+	fmt.Printf("Welcome, and hello, %v \n", n)
+}
+func sayBye(n string) {
+	fmt.Printf("Time to go, %v \n", n)
+}
+func sayStop(n string) {
+	fmt.Printf("Stop! Is your name %v ?\n", n)
+}
+func cycleStop(n []string, fn func(string)) {
+	for _, V := range n {
+		fn(V)
+	}
+}
+func cycleNames(n []string, f func(string)) {
+	for _, v := range n {
+		f(v)
+	}
+}
+func cycleGoodBye(names []string, F func(string)) {
+	for _, value := range names {
+		F(value)
+	}
+}
