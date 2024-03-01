@@ -67,7 +67,7 @@ uint16
 uint32
 uint64
 
-
+-------------------------------------
 
 Operators int versus floats: (9:45)
 
@@ -82,7 +82,7 @@ func main() {
 	fmt.Println(n3)
 }
 
-
+----------------------------------
 Concatenation in Golang: (10:15)
 
 package main
@@ -96,7 +96,7 @@ func main() {
 	fmt.Println(sneakers + "\n" + name)
 }
 
-
+-----------------------------------------
 How Bytecode is translated in GO!: (10:40)
 
 NOTE: when trying to run the length of a string to determine the numeric value do the following:
@@ -119,7 +119,7 @@ timeline(12:00)
 
 var1, var2 := 1, 2
 
-
+------------------------------------------------
 calling a function within a function by creating your own function: (14:15)
 
 package main
@@ -134,7 +134,7 @@ func main() {
 func MyFunction(printMe string) {
 	fmt.Println(printMe)
 }
-
+--------------------------------------------
 using math in a function you create and calling that new function within the main function: (14:58)
 
 package main
@@ -152,7 +152,7 @@ func intDivision(numerator int, denominator int) int {
 	var results int = numerator / denominator
 	return results
 }
-
+---------------------------------------------------
 NOTE: Practing Go on my own from what I am learning: 15:06
 
 package main
@@ -171,7 +171,7 @@ func floatingMath(increment int, decrement int) int {
 	var result int = increment + decrement
 	return result
 }
-
+-----------------------------------------------
 NOTE: Practing Go on my own from what I am learning: 15:06
 
 package main
@@ -189,7 +189,7 @@ func display(input int, output int) int {
 	var solution int = input / output
 	return solution
 }
-
+------------------------------------------------
 NOTE: Practing more math methods with Golang: (15:20)
 
 package main
@@ -208,7 +208,7 @@ func mathTeacher(lessMath int, moreMath int) (int, int) {
 	var remainder int = lessMath % moreMath
 	return result, remainder
 }
-
+-----------------------------------------------
 NOTE: Please Practice how to catch errors from this TIMELINE(17:00):
 
 package main
@@ -239,7 +239,7 @@ func intDivision(numerator int, denominator int) (int, int, error) {
 	var remainder int = numerator % denominator
 	return result, remainder, err
 }
-
+------------------------------------------------
 PAUSED (17:50) Break till tomorrow.
 
 package main
@@ -278,7 +278,7 @@ func main() {
 	fmt.Println(tech[0:24])
 	fmt.Println(len(tech[0:24]))
 }
-
+--------------------------------------------
 Timeline(21:00)
 
 package main
@@ -292,7 +292,7 @@ func main() {
 	fmt.Println(tech[0:5])
 
 }
-
+-------------------------------------------
 Timeline(21:20)
 
 package main
@@ -306,7 +306,7 @@ func main() {
 	fmt.Println(intArr)
 
 }
-
+--------------------------------------------
 NOTE: Timeline(21:45) append() allows you to insert an element into the array or list, similar to JavaScript.
 
 package main
@@ -321,7 +321,7 @@ func main() {
 	intSlice = append(intSlice, 7)
 	fmt.Println(intSlice)
 }
-
+-----------------------------------------------
 Tutorial 13# Pass By Value
  netninja
 
@@ -342,7 +342,7 @@ func main() {
 
 	fmt.Println(fname, lname)
 }
-
+----------------------------------------------
 package main
 
 import "fmt"
@@ -360,7 +360,7 @@ func intMath(numerator int, denominator int) (int, int) {
 	return remainder, result
 }
 
-
+-----------------------------------------------
 NOTE: Tutorial 13#
 we are able to carry the value from the newReturn function onto the main function. Only by adding the string type on the right side of the parameter of newReturn. Also, returning the x variable so that we are able to reuse the value within the main function.
 
@@ -380,7 +380,7 @@ func main() {
 
 	fmt.Println(name)
 }
-
+-------------------------------------
 NOTE: tutorial 13#
 
 package main
@@ -399,7 +399,7 @@ func main() {
 
 	fmt.Printf("Silly Me! %v", name)
 }
-
+------------------------------------
 NOTE: Tutorial 12#
 author: The NetNinja
 
@@ -422,7 +422,7 @@ func main() {
 	fmt.Printf("Here is a list of all the Programming languages I had used:\n %v\n", Programs)
 
 }
-
+-------------------------------------
 
 NOTE: Tutorial 12#
 author: The NetNinja
@@ -463,7 +463,7 @@ func main() {
 	}
 
 }
-
+--------------------------------
 NOTE: example of pointers
 
 package main
@@ -477,7 +477,7 @@ func main() {
 	fmt.Println(y)
 	// y is now 5
 }
-
+---------------------------------
 
 NOTE: GO(Golang) Tutorial #5 - Arrays & Slices
 author: The NetNinja
@@ -526,7 +526,7 @@ func main() {
 	scores = append(scores, 100000000)
 	fmt.Println(scores, len(scores))
 }
-
+-------------------------------------
 
 NOTE: GO(Golang) Tutorial#6 - The Standard Library
 author: The NetNinja
@@ -549,7 +549,7 @@ func main() {
 	sort.Ints(ages)
 	fmt.Println(ages)
 }
-
+------------------------------------
 
 NOTE: GO(Golang) Tutorial #7 - Loops
 YouTube
@@ -578,7 +578,7 @@ func main() {
 		fmt.Println("value of 'i' is:", x)
 	}
 }
-
+------------------------------------
 
 NOTE: GO(Golang) Tutorial #7 - Loops
 
@@ -646,7 +646,7 @@ func main() {
 	}
 
 }
-
+------------------------------------
 NOTE: Go(Golang) Tutorial #7 - Loops
 
 package main
@@ -665,7 +665,7 @@ func main() {
 	}
 }
 
-
+--------------------------------------------
 NOTE: Go (Golang) Tutorial #7 - Loops
 
 package main
@@ -680,7 +680,7 @@ func main() {
 		fmt.Printf("the value at index %v\n is %v\n", index, value)
 	}
 }
-
+------------------------------------------
 NOTE: GO(Golang) Tutorial #7 - Loops
 "UNDERSCORE" if you don't want the index use a "underscore" as a place holder and the value of index won't be displayed as apart of the operation after it has ran. Example below:
 
@@ -696,7 +696,7 @@ func main() {
 		fmt.Printf("the value is %v\n", value)
 	}
 }
-
+----------------------------------------------
 
 NOTE: Go (Golang) Tutorial 8# - Booleans & Conditionals
 
@@ -739,6 +739,7 @@ STOP!!! PAUSED: Go (Golang) Tutorial #8 - Booleans & Conditionals...
 Continue @ Tutorial #9 author: The NetNinja
 
 
+--------------------------------------------------
 NOTE: PRACTICE map & for loop key & value
 
 
@@ -782,6 +783,7 @@ func main() {
 	}
 }
 
+-----------------------------------------
 
 NOTE: GO(Golang) Tutorial #9 - Using Functions (02/25/2024)
 Three step process:
@@ -836,3 +838,215 @@ func cycleGoodBye(names []string, F func(string)) {
 		F(value)
 	}
 }
+
+-----------------------------------------
+
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	returnAddUsers([]string{
+		"Jamie", "John", "Pascal", "Hernandez", "Paul", "Forbes", "Castro",
+	}, addUsers)
+
+	returnDeleteUsers([]string{
+		"Jamie", "John", "Pascal", "Hernandez", "Paul", "Forbes", "Castro",
+	}, deleteUsers)
+	returnSuspendUsers([]string{
+		"Jamie", "John", "Pascal", "Hernandez", "Paul", "Forbes", "Castro",
+	}, suspendUsers)
+}
+func addUsers(u string) {
+	fmt.Printf("Welcome %v your account is active\n", u)
+}
+func returnAddUsers(u []string, log func(string)) {
+	for _, value := range u {
+		log(value)
+	}
+}
+func deleteUsers(d string) {
+	fmt.Printf("%v, your account has been deleted\n", d)
+}
+func returnDeleteUsers(d []string, purge func(string)) {
+	for _, value := range d {
+		purge(value)
+	}
+}
+func suspendUsers(s string) {
+	fmt.Printf("The account %v is under investigation in violation of the use of terms and services\n", s)
+}
+func returnSuspendUsers(s []string, suspension func(string)) {
+	for _, value := range s {
+		suspension(value)
+	}
+}
+
+
+--------------------------------
+
+NOTE: Go(Golang) Tutorial #9 - Using Functions
+
+package main
+
+import (
+	"fmt"
+	"math"
+)
+
+func main() {
+	cycleNames([]string{"Cloud", "Tifa", "Barrett"}, sayHello)
+	cycleNames([]string{"Seifer", "Strider", "Gunkin"}, sayBye)
+	a1 := circleArea(10.5)
+	a2 := circleArea(15)
+	a3 := circleArea(3.14359)
+
+	fmt.Println(a1, a2, a3)
+}
+
+func sayHello(n string) {
+	fmt.Printf("Hello, %v \n", n)
+}
+
+func sayBye(n string) {
+	fmt.Printf("Goodbye %v \n", n)
+}
+
+func cycleNames(n []string, f func(string)) {
+	for _, v := range n {
+		f(v)
+	}
+}
+
+func circleArea(r float64) float64 {
+	return math.Pi * r * r
+}
+STOPPED: PAUSED: Go(Golang) Tutorial #10 - Multiple Return Values
+author: The NetNinja
+
+
+-------------------------------------------------
+
+(02/28/2024)
+NOTE: Go(Golang) Tutorial #10 - Multiple Return Values
+
+package main
+
+import (
+	"fmt"
+	"strings"
+)
+
+func getInitials(n string) (string, string) {
+	s := strings.ToUpper(n)
+	names := strings.Split(s, " ")
+
+	var initials []string
+	for _, v := range names {
+		initials = append(initials, v[:1])
+	}
+	if len(initials) > 1 {
+		return initials[0], initials[1]
+	}
+	return initials[0], "_"
+}
+
+func main() {
+	fn, ln := getInitials("william castro")
+	fmt.Println(fn, ln)
+}
+
+
+NOTE: Go(Golang) Tutorial #14
+
+package main
+
+import "fmt"
+
+func main() {
+	updateName()
+}
+func updateName() {
+	var name string = "William Castro"
+	fmt.Printf("from the updateName method")
+	m := &name
+	fmt.Println("memory address:", m)
+	fmt.Println("value at memory address:", *m)
+}
+
+-------------------------------------------------
+
+NOTE: GO(Golang)Tutorial 14
+
+
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	name := "tifa"
+
+	fmt.Println("memory address of name is:", &name)
+
+	m := &name
+	x := "Robin"
+
+	fmt.Printf("The name is %v ", &x)
+
+	fmt.Printf("memory address of m is: ", &m)
+	fmt.Println("value at memory address is: ", m)
+	fmt.Println(m)
+
+	fmt.Println(name)
+}
+
+func returnValue() {
+
+}
+func updateName(x *string) {
+	*x = "Carlos Vega"
+}
+
+-----------------------------------------------------
+Go (Golang) Tutorial #16
+
+bill.go (file)
+
+
+package main
+
+
+type bill struct {
+	name  string
+	items map[string]float64
+	tip   float64
+}
+
+// make new bills
+func newBill(name string) bill {
+	b := bill{
+		name:  name,
+		items: map[string]float64{},
+		tip:   0,
+	}
+	return b
+}
+
+main.go (file)
+
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	mybill := newBill("mario's bill")
+
+	fmt.Println(mybill)
+}
+
